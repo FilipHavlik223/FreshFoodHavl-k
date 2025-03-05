@@ -15,31 +15,68 @@
         display: none;
     }
 
-    header{
+    header {
         float: none;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 70%;
     }
-    nav ul{
+
+    #logo {
+        transform: scale(90%);
+        margin-top: 25px;
+    }
+
+    nav {
+        width: 25%;
+    }
+
+    nav ul {
         display: flex;
         flex-direction: row;
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
 
-}
+    /*background-position: 90% 20%;?*/
+        nav ul li a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
 
-/* Telefony na šířku, menší tablety */
-@media (max-width: 768px) {
-    body {
-        background: yellow;
-    }
-}
+        }
 
-/* Telefony (mobilní zařízení) */
-@media (max-width: 576px) {
-    body {
-        background: red;
+        #slide{
+            display: flex;
+            justify-content: center;
+        }
+
+
     }
-}
+
+    /* Telefony na šířku, menší tablety */
+    @media (max-width: 768px) {
+        body {
+            background: yellow;
+        }
+    }
+
+    /* Telefony (mobilní zařízení) */
+    @media (max-width: 576px) {
+        body {
+            background: red;
+        }
+    }
 
 
 
