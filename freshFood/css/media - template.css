@@ -21,7 +21,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        width: 70%;
+        width: 60%;
     }
 
     #logo {
@@ -48,35 +48,92 @@
     }
 
     /*background-position: 90% 20%;?*/
-        nav ul li a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
+    nav ul li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 55px;
+        background-position-x: 50px;
 
-        }
+    }
 
-        #slide{
-            display: flex;
-            justify-content: center;
-        }
+    #slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    #uvod {
+        width: 100%;
+    }
+
+    #slide img {
+        max-width: 70%;
+    }
+
+    #slide h1 {
+        margin: 0.67em 7em;
+    }
+
+    #slide h2 {
+        margin: 0.67em 8.5em;
+    }
+
+    #newsletter {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: calc(100% - 150px);
+        margin: 0 auto;
+        background-position: 10%;
+    }
+
+    #blog {
+        width: 75%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        justify-items: center;
+    }
+
+    #blog article{
+        width: 90%;
 
 
     }
 
-    /* Telefony na šířku, menší tablety */
-    @media (max-width: 768px) {
-        body {
-            background: yellow;
-        }
+    .secon-h1{
+        margin: 0.67em 7em;
     }
 
-    /* Telefony (mobilní zařízení) */
-    @media (max-width: 576px) {
-        body {
-            background: red;
-        }
+    #paticka{
+        justify-content: center;
+        position: relative;
+        width: calc(100% - 200px);
+        margin: 0 auto;
+        background-position: 10%;
     }
+
+
+}
+
+/* Telefony na šířku, menší tablety */
+@media (max-width: 768px) {
+    body {
+        background: yellow;
+    }
+}
+
+/* Telefony (mobilní zařízení) */
+@media (max-width: 576px) {
+    body {
+        background: red;
+    }
+}
 
 
 
